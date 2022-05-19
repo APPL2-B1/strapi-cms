@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beritas",
+  "info": {
+    "singularName": "berita",
+    "pluralName": "beritas",
+    "displayName": "berita"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "text"
+    },
+    "gambar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "tanggal": {
+      "type": "date"
+    },
+    "penulis": {
+      "type": "string"
+    }
+  }
+}
