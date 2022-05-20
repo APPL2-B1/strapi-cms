@@ -1,0 +1,8 @@
+.prodi-list ,.prodi-list div{
+    border: solid 1px black;
+    margin: 5px;
+}
+.prodi-profile , .prodi-profile div, .prodi-detail div{
+    border: solid 1px black;
+    margin: 5px;
+}

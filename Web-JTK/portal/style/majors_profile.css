@@ -1,0 +1,36 @@
+.jurusan-description{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgba(121, 121, 121, 0.5);
+    padding-bottom:20px ;
+}
+.jurusan-description img{
+    height: 300px;
+    box-shadow: -5px 5px 10px 0 var( --body-shadow);
+}
+.jurusan-description p{
+    margin-left: 20px;
+}
+.wp-title{
+    display: flex;
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+}
+.wp-title img{
+    width: 100px;
+}
+.wp-content{
+    background-color:var(--secondry-background-color);
+}
+.wpc-element{
+    margin: 10px 0px 10px 0px;
+}
+.wpc-element p{
+padding-left: 20px;
+}

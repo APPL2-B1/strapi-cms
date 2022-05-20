@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #303030;
+    --secondary-color: #858585;
+    --third-color: #858585;
+    --background-color: #3f3f3f;
+    --secondry-background-color: rgb(170, 170, 170);
+    --primary-text-color: #fff;
+    --secondry-text-color: #aaaaaa;;
+    --outline-color: #0b8b9c;
+    --body-bg:rgb(43, 42, 51);
+    --body-shadow:rgba(0, 0, 0, 0.3);
+    --banner-bg:rgb(43, 42, 51);
+    --map-template: invert(0%);
+  }
+.light-theme {
+    --primary-color: rgb(5, 19, 103);
+    --primary-color-08: rgb(5, 19, 103, 0.8);
+    --primary-color-05: rgb(5, 19, 103, 0.5);
+    --primary-color-02: rgb(5, 19, 103, 0.2);
+    --secondary-color: rgb(93, 139, 244);
+    --third-color: rgb(0, 17, 255);
+    --background-color: rgb(223, 246, 255);
+    --secondry-background-color: rgba(170, 170, 170, 0.1);
+    --primary-header-color:rgb(255, 255, 255);
+    --primary-text-color:rgb(0, 0, 0);
+    --secondry-text-color: rgb(121, 121, 121);
+    --outline-color: rgb(11, 139, 156);
+    --body-bg:rgb(255, 255, 255);
+    --body-shadow:rgba(0, 0, 0, 0.3);
+    --banner-bg:rgb(170, 170, 170, 0.1);
+    --map-template: invert(0%);
+  }
+  .dark-theme {
+    --primary-color: rgb(5, 19, 103);
+    --primary-color-08: rgb(5, 19, 103, 0.8);
+    --primary-color-05: rgb(5, 19, 103, 0.5);
+    --primary-color-02: rgb(5, 19, 103, 0.2);
+    --secondary-color: rgb(93, 139, 244);
+    --third-color: rgb(108, 152, 255);
+    --background-color: rgb(58, 58, 58);
+    --secondry-background-color: rgb(66, 65, 77,1);
+    --primary-header-color:rgb(255, 255, 255);
+    --primary-text-color: rgb(255, 255, 255);
+    --secondry-text-color: rgb(121, 121, 121);
+    --outline-color: rgb(11, 139, 156);
+    --body-bg:rgb(43, 42, 51);
+    --body-shadow:rgba(255, 255, 255, 0.1);
+    --banner-bg:rgb(170, 170, 170, 0.9);
+    --map-template: invert(90%);
+  }
