@@ -1,0 +1,90 @@
+.staff.banner{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+.staff.banner .staff-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color-05);
+}
+.staff.banner .title{
+    z-index: 1;
+}
+.staff.banner .staff-list{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    justify-items: center;
+}
+.staff.banner .staff-list .staff{
+    height: 100%;
+    width: 50%;
+}
+
+.staff.banner .staff-list .staff .wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat:   no-repeat;
+    background-position: center;
+    position: relative;
+}
+.staff.banner .staff-list .staff .wrapper{
+    z-index: 1;
+}
+.staff.banner .staff-list .staff .wrapper .detail{
+    background-color: rgba(0,0,0,0.5) ;
+    position: absolute;
+    height: 40%;
+    width: 80%;
+    bottom: 0;
+    right: 0;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.5);
+}
+.staff.banner .staff-list .staff .wrapper .detail .text{
+    margin-left: 10px;
+    border-bottom: solid 2px white;
+}
+.staff.banner .staff-list .staff .wrapper .detail p{
+    padding: 0;
+    margin: 0;
+}
+.staff.banner .staff-list .staff .wrapper .detail .sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+.staff.banner .staff-list .staff .wrapper .detail .sosmed button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.staff.banner .staff-list .staff .wrapper .detail .sosmed button:hover img,
+.staff.banner .staff-list .staff .wrapper .detail .sosmed a:hover img{
+    background-color: rgba(0,0,0,0.2);
+}
+.staff.banner .staff-list .staff .wrapper .detail .sosmed button img,
+.staff.banner .staff-list .staff .wrapper .detail .sosmed a img{
+    height: 45px ;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.0);
+    transition: all 0.5s ease;
+}
+.staff.banner .staff-list .staff .wrapper .photo{
+    position: absolute;
+    height: 85%;
+    top: 0;
+    left: 0;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.5);
+}

@@ -1,7 +1,17 @@
 <?php
 // Multimedia asset paths
 define("ASSET_PATH","asset/");
-    // common
+// academic-calender
+define("ACADEMIC_CALENDAR_PATH",ASSET_PATH."academic-calender/");
+define("ACADEMIC_CALENDAR_DOCUMENT",ACADEMIC_CALENDAR_PATH."document/");
+define("ACADEMIC_CALENDAR_IMAGE",ACADEMIC_CALENDAR_PATH."image/");
+// activity
+define("ACTIVITY_PATH",ASSET_PATH."activity/");
+define("ACTIVITY_IMAGE",ACTIVITY_PATH."image/");
+// agenda
+define("AGENDA_ASSET_PATH",ASSET_PATH."agenda/");
+define("AGENDA_IMAGE",AGENDA_ASSET_PATH."image/");
+// common
 define("COMMON_ASSET_PATH",ASSET_PATH."common/");
 define("COMMON_IMAGE",COMMON_ASSET_PATH."image/");
 define("COMMON_LOGO",COMMON_ASSET_PATH."logo/");
@@ -16,18 +26,22 @@ define("GALERY_IMAGE",GALERY_ASSET_PATH."image/");
 // major
 define("MAJOR_ASSET_PATH",ASSET_PATH."major/");
 define("MAJOR_IMAGE",MAJOR_ASSET_PATH."image/");
-// research
-define("AGENDA_ASSET_PATH",ASSET_PATH."agenda/");
-define("AGENDA_IMAGE",AGENDA_ASSET_PATH."image/");
+// news
+define("NEWS_ASSET_PATH",ASSET_PATH."news/");
+define("NEWS_IMAGE",NEWS_ASSET_PATH."image/");
 // research
 define("RESEARCH_ASSET_PATH",ASSET_PATH."research/");
 define("RESEARCH_IMAGE",RESEARCH_ASSET_PATH."image/");
+define("RESEARCH_DOCUMENT",RESEARCH_ASSET_PATH."document/");
 // staff
 define("STAFF_ASSET_PATH",ASSET_PATH."staff/");
 define("STAFF_IMAGE",STAFF_ASSET_PATH."image/");
 // student
 define("STUDENT_ASSET_PATH",ASSET_PATH."student/");
 define("STUDENT_IMAGE",STUDENT_ASSET_PATH."image/");
+// user
+define("USER_ASSET_PATH",ASSET_PATH."user/");
+define("USER_IMAGE",USER_ASSET_PATH."image/");
 
 // Data base asset paths
 define("DATA_BASE_PATH","data-base/");
@@ -38,7 +52,7 @@ define("LANGUAGE_PATH","language/");
 // Style asset paths
 define("STYLE_PATH","style/");
 
-// Style asset paths
+// View asset paths
 define("VIEW_PATH","views/");
 define("VIEW_HOME",VIEW_PATH."home.php");
     // Profile 

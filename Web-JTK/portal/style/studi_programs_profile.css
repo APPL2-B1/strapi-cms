@@ -1,8 +1,74 @@
-.prodi-list ,.prodi-list div{
+/* .prodi-list ,.prodi-list div{
     border: solid 1px black;
     margin: 5px;
 }
 .prodi-profile , .prodi-profile div, .prodi-detail div{
     border: solid 1px black;
     margin: 5px;
+} */
+.study-program.banner{
+    box-shadow: none !important;
+}
+.sp-show-case{
+   display: grid;
+   grid-template-columns: 1fr 2fr 2fr;
+   gap: 20px;
+}
+.sp-show-case div{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: -5px -5px 10px var(--body-shadow);
+ }
+.sp-description{
+    margin: 0px 40px;
+}
+.vm-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr ; 
+    gap: 20px; 
+    padding: 0 20px;
+    justify-items: center;
+}
+.vm-wrapper .vm-element{
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: -5px 5px 10px var(--body-shadow);
+    border-radius: 5px;
+    text-align: center;
+    width: 70%;
+}
+.vm-wrapper .vm-element .vm-title{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align:center;
+    align-items: center;
+    justify-self: center;
+}
+.vm-wrapper .vm-element .vm-title h3{
+    font-size: 64px;
+    text-decoration: underline;
+}
+.vm-wrapper .vm-element .vm-title img{
+    width: 100px;
+    opacity: 0.5;
+}
+.vm-wrapper .vm-element .vm-description{
+    font-size:24px;
+}
+.sp-competencies{
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.sp-competencies h3{
+    margin-left: 20px;
+}
+.sp-competencies-content {
+    border-left: solid 20px var(--primary-color);
+    padding: 10px 0 10px 20px;
 }

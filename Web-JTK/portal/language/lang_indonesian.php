@@ -3,7 +3,7 @@
 $lang_web_title = "JTK-POLBAN";
 $lang_web_description = "Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung";
 $lang_navigation_home = "Beranda";
-$lang_navigation_profile = "Pofile";
+$lang_navigation_profile = "Profile";
 $lang_navigation_education = "Pendidikan";
 $lang_navigation_contact = "Kontak";
 $lang_navigation_partnership = "Mitra";
@@ -14,6 +14,7 @@ $lang_navigation_information_documentation_burger = "Dokumentasi";
 $lang_navigation_major_profile = "Profile Jurusan";
 $lang_navigation_studi_programs_profile = "Profile Prodi";
 $lang_navigation_staff_profile_list = "Daftar Pegawai";
+$lang_navigation_staff_profile = "Profil Pegawai";
 $lang_navigation_curriculum = "Kurikulum";
 $lang_navigation_agenda = "Agenda";
 $lang_navigation_achievement_list = "Daftar Prestasi";
@@ -45,6 +46,12 @@ Indonesia. Jurusan ini telah menyelenggarakan
 pendidikan D-3 bidang teknik komputer dan 
 informatika sejak 1977 dan pendidikan D-4 sejak 
 2009.";
+
+$lang_study_program_short = "Prodi";
+$lang_study_program_long = "Program Studi";
+$lang_study_program_D3 = "D-3";
+$lang_study_program_D4 = "D-4";
+
 // Footer
 $lang_major_name = "Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung";
 $lang_creator = "Kelompok-1";
@@ -106,8 +113,12 @@ dapat bekerja di bidang lainnya. Misalnya di bidang pendidikan atau dalam
 bidang keilmuan dengan menjadi peneliti di lembaga-lembaga penelitian seperti 
 di LIPI, BPPT, dan Badan Penelitian dan Pengembangan di perusahaan.";
 
-// staffs profile page
-$lang_staff_profile_list_page_title = "DAFTAR PROFIL PEGAWAI";
+// staff list profile page 
+$lang_staff_profile_list_page_title="Daftar Dosen Jurusan Teknik Informatika
+POLBAN ";
+
+// staff profile page
+$lang_staff_profile_page_title = "Profil Pegawai";
 $lang_staff_profile_list_table_tool_bar_reset = "Atur ulang";
 $lang_staff_profile_table_title = "Daftar pegawai";
 $lang_staff_profile_table_header_number = "No";
@@ -117,10 +128,28 @@ $lang_staff_profile_table_header_expert = "Ahli";
 $lang_staff_profile_table_header_email = "Email";
 $lang_staff_profile_table_header_phone = "No.Hp";
 $lang_staff_profile_table_header_biodata = "Biodata";
-
+$lang_staff_profile_table_header_education = "Pendidikan";
+$lang_staff_profile_table_header_project = "Proyek";
+$lang_staff_profile_table_header_achievement = "Prestasi / Penghargaan";
+$lang_staff_profile_table_header_ativity = "Kegiatan";
 
 // studi programs profile page
-$lang_studi_programs_profile_page_title = "PROFIL PRODI";
+$lang_studi_programs_profile_page_title = "Program Studi JTK";
+$lang_studi_programs_profile_subt_biodata = "Biodata Prodi";
+$lang_biodata_tb_head_name = "Nama";
+$lang_biodata_tb_head_code = "Kode Program Studi";
+$lang_biodata_tb_head_degree = "Jenjang";
+$lang_biodata_tb_head_accre = "Akreditas";
+$lang_biodata_tb_head_letter = "SK Penyelenggaraan";
+$lang_biodata_tb_head_address = "Alamat";
+$lang_biodata_tb_head_pos = "Kode Pos";
+$lang_biodata_tb_head_phone = "Telepon";
+$lang_biodata_tb_head_fax = "Faximile";
+$lang_biodata_tb_head_email = "Email";
+$lang_biodata_tb_head_web = "Website";
+$lang_studi_programs_profile_subt_visi = "Visi";
+$lang_studi_programs_profile_subt_misi = "Misi";
+$lang_studi_programs_profile_subt_competention = "Kompetensi Program Studi";
 $lang_studi_programs = "studi programs";
 $lang_studi_programs_profile_page_description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum

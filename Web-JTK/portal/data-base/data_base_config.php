@@ -1,8 +1,8 @@
 <?php
 $server = "localhost";
-$user = "root";
-$password = "";
-$nama_database = "web_jtk";
+$user = "bandang";
+$password = "-X&8nRAfunP$";
+$nama_database = "u1801190_web-jtk-db";
 
 $db = mysqli_connect($server, $user, $password, $nama_database);
 

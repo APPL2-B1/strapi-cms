@@ -1,0 +1,49 @@
+.list-staff {
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+}
+.list-staff .ls-staff-element{
+    display: grid ;
+    gap: 10px;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-color: var(--primary-color-08);
+    box-shadow: -5px 5px 10px var(--body-shadow);
+    color: rgba(255, 255, 255,1);
+    align-items: center;
+    text-decoration: none;
+}
+.list-staff .ls-staff-element:hover .ls-desc h3{
+    border-bottom: solid 1px rgba(255, 255, 255,1);
+}
+.list-staff .ls-staff-element:hover .ls-staff-go-button img{
+    opacity: 0.5;
+    transform: translateX(10px);
+}
+.list-staff .ls-staff-element:hover .ls-staff-photo{
+    scale: 1.2;
+}
+.list-staff .ls-staff-element .ls-desc h3{
+    border-bottom: solid 1px rgba(255, 255, 255,0.5);
+    transition: all 0.5s ease;
+}
+.list-staff .ls-staff-element .ls-desc p{
+    margin: 0;
+    padding: 0;
+}
+.list-staff .ls-staff-element .ls-staff-photo{
+    height:100px;
+    transition: all 0.5s ease;
+}
+.list-staff .ls-staff-element .ls-staff-photo img{
+    height:100%;
+}
+.list-staff .ls-staff-element .ls-staff-go-button img{
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+
+
+

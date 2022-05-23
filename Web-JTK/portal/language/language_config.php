@@ -9,6 +9,10 @@ if(isset($_GET['lang'])) {
   // $self = $_SERVER['REQUEST_URI'];
   // header('Location:'.$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']);
 }
+
+// if(isset($_SESSION['lang'])) {
+//   $_SESSION['lang'] = $default_lang;
+// }
 if(!$_SESSION['lang']) {
   $_SESSION['lang'] = $default_lang;
 }

@@ -5,22 +5,22 @@
         Your browser does not support HTML5 video.
     </video>
     <div class="user-interest-navigation max-width-outter">
-        <a class="more">
+        <a href="#" class="more">
             <span><?php echo $lang_navigation_for_registrant;?></span>
             <img src="<?php echo COMMON_ICON?>writing-student-white.png"> 
         </a>
             
-        <a class="more">
+        <a href="#" class="more">
             <span><?php echo $lang_navigation_for_active_student;?></span>
             <img src="<?php echo COMMON_ICON?>learning-student-white.png"> 
         </a>
             
-        <a class="more">
+        <a href="#" class="more">
             <span><?php echo $lang_navigation_for_company;?></span>
             <img src="<?php echo COMMON_ICON?>company-white.png"> 
         </a>
             
-        <a class="more">
+        <a href="#" class="more">
             <span><?php echo $lang_navigation_for_graduate;?></span>
             <img src="<?php echo COMMON_ICON?>graduated-white.png"> 
         </a>
@@ -29,20 +29,19 @@
 <div>
     <section class="major banner">
         <div class="description">
-            <h2 class="title"><b><?php echo $lang_major_code;?></b></h2>
+            <?php 
+                // get major
+                $major = mysqli_fetch_array($get_major);
+            ?>
+            <h2 class="title"><b><?php echo $major['code'];?></b></h2>
             <div class="content">
-                <?php 
-                echo <<<HEREDOC
-                <h2>$lang_major_short</h2>
-                <p>$lang_major_description
-                </p>
-                HEREDOC;
-                ?>
+                <h2><?php echo $major['name'];?></h2>
+                <p><?php echo $major['description'];?></p>
             </div>
-            <button class="more">
+            <a href="<?php echo PRODI_PATH;?>" class="more">
                 <span><?php echo $lang_navigation_major_profile;?></span>
                 <img src="<?php echo COMMON_ICON?>arrow-white-right.png"> 
-            </button>
+            </a>
         </div>
         <div 
             class="image"
@@ -52,32 +51,32 @@
     </section>
     <section class="study-program banner">
         <div class="description">
-            <h2 class="title"><b>Study Program</b></h2>
+            <h2 class="title"><b> <?php echo $lang_study_program_long; ?> </b></h2>
         </div>
         <div class="image">
-            <div class="d3">
+            <a href= "<?php echo PRODI_PATH; ?>"  class="d3">
                 <div 
                 class="img"
                 style="background-image: url('<?php echo COMMON_IMAGE?>study-program-banner-2.jpg')">
                     <div class="sub-title">
-                        <h3>D-3</h3>
+                        <h3> <?php echo $lang_study_program_D3; ?> </h3>
                     </div>
                 </div>
-            </div>
-            <div class="d4">
+            </a>
+            <a href= "<?php echo PRODI_PATH; ?>"  class="d4">
                 <div 
                 class="img"
                 style="background-image: url('<?php echo COMMON_IMAGE?>study-program-banner-1.jpg')">
                     <div class="sub-title">
-                        <h3>D-4</h3>
+                        <h3> <?php echo $lang_study_program_D4; ?> </h3>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <button class="more">
-                    <span>Profile Prodi....</span>
+        <a href="<?php echo PRODI_PATH;?>" class="more">
+                    <span> <?php echo $lang_navigation_studi_programs_profile; ?> </span>
                     <img src="<?php echo COMMON_ICON?>arrow-white-right.png"> 
-        </button>
+        </a>
         <!-- <div class="icon">
             <img src="<?php echo COMMON_ICON?>course-white.png">
         </div> -->
@@ -85,9 +84,31 @@
     <section class="research-list banner"
         style="background-image: url(<?php echo COMMON_IMAGE?>research-list-banner.jpg)"
         >
+        <?php 
+            $research = mysqli_fetch_array($get_all_research); 
+            // query untuk mendapatkan news dengan category research, dan berisikan data khusus research
+            // SELECT * FROM `news` 
+            //     join `sys_category` on `sys_category`.`id`= `news`.`sys-category-id` 
+            //     join `user` on `user`.`id`= `news`.`user-id` 
+            //     join `news-by-category` on `news`.`id` = `news-by-category`.`news-id` 
+            //     join `research` on `news-by-category`.`child-category-id`=`research`.`id`
+            //     	WHERE `news`.`sys-category-id` = 2;
+
+            // `news`.`id` as `id`,
+            // `user`.`nama` as `creator`,
+            // `news`.`title` as `title`
+            // get all news activity
+            // SELECT * FROM `news` 
+            // join `sys_category` on `sys_category`.`id`= `news`.`sys-category-id` 
+            // join `user` on `user`.`id`= `news`.`user-id` 
+            // join `news-by-category` on `news`.`id` = `news-by-category`.`news-id` 
+            // join `activity` on `news-by-category`.`child-category-id`=`activity`.`id`
+            //     WHERE `news`.`sys-category-id` = 4;
+
+        ?>
         <div class="wrapper">
             <div class="description">
-                <h2 class="title"><b>Penelitian</b></h2>
+                <h2 class="title"><b><?php echo $lang_navigation_research;?></b></h2>
             </div>
             <div class="list-slider">
                 <div class="go prev">
@@ -97,29 +118,18 @@
                 </div>
                 <div class="content">
                     <div class="image-wrapper">
-                        <img src="<?php echo RESEARCH_IMAGE?>Analisis Penerapan Pemeringkatan ReconRank Query Singleterm untuk Query Multiterm Web Semantik.jpg">
+                        <img src="<?php echo RESEARCH_IMAGE.$research["image-name"];?>">
                     </div>
                     <div class="detail">
                         <div class="title">
-                            <h3>Analisis Penerapan Pemeringkatan ReconRank Query 
-                                Singleterm untuk Query Multiterm Web Semantik
-                            </h3>
+                            <h3><?php echo $research["title"];?></h3>
                         </div>
                         <div class="description">
                             <p>
-                            Informasi yang tersedia di internet sekarang ini 
-                            sangat banyak sehingga untuk mendapatkan suatu 
-                            informasi dibutuhkan alat untuk mencari informasi 
-                            tersebut dengan cepat. Search engine atau mesin 
-                            pencari menyediakan fasilitas untuk pencarian 
-                            informasi yang dibutuhkan dari World Wide Web 
-                            (WWW) yang berisi berbagai halaman HTML dan link 
-                            lainnya. Search engine ini dapat menampilkan 
-                            informasi yang relevan sesuai dengan query berupa 
-                            keyword yang diinputkan oleh user. 
+                            <?php echo $research["description"];?>
                             </p>
-                            <a class="more">
-                                <span><?php echo $lang_navigation_for_more;?></span>
+                            <a href="<?php echo ACHIVEMENT_LIST_PATH ?>" class="more">
+                                <span><?php echo $lang_navigation_research_list;?></span>
                                 <img src="<?php echo COMMON_ICON?>arrow-white-right.png"> 
                             </a>
                         </div>
@@ -159,6 +169,32 @@
                 </div>
             </div>
             <div class="event-list">
+                <?php 
+                $max_list = 4;
+                $iterator = 0;
+                while($news_activity = mysqli_fetch_array($get_all_news_activity)){
+                    if (is_null($news_activity['primary-image'])){
+                        $img_url = ACTIVITY_IMAGE.$news_activity['secondary-image'];
+                    }else{
+                        $img_url = ACTIVITY_IMAGE.$news_activity['primary-image'];
+                    }
+                    echo <<<HEREDOC
+                    <a href="#" class="card"
+                        style="background-image: url('$img_url')">
+                        <div class="card-description">
+                            <h3>{$news_activity['title']}</h3> </br>
+                            <span>{$news_activity['activity-date']}</span> </br>
+                            <span>{$news_activity['activity-time']}</span>
+                        </div>
+                    </a>
+                    HEREDOC;
+                    $iterator ++;
+                    if($iterator>=$max_list){
+                        break;
+                    }
+                }
+                ?>
+            <!-- Static sample
                 <a href="#" class="card"
                     style="background-image: url('<?php echo AGENDA_IMAGE?>Kajian Sains dan Teknologi Islam Seri 3.jpg')">
                     <div class="card-description">
@@ -191,6 +227,7 @@
                         <span>09.00 ~ 11.00</span>
                     </div>
                 </a>  
+            -->
             </div>
         </div>
     </section>
@@ -215,6 +252,32 @@
                 </div>
             </div>
             <div class="news-list">
+                <?php 
+                $max_list = 4;
+                $iterator = 0;
+                while($news = mysqli_fetch_array($get_all_news_desc_by_publish_date)){
+                    echo <<<HEREDOC
+                    <a href="#" class="news-item">
+                        <div class="date">
+                            {$news['publish-date']}
+                        </div>
+                        <div class="category"
+                        style="border-color: {$news['category-color']};"
+                        >
+                            {$news['category']}
+                        </div>
+                        <div class="news-title">
+                            {$news['title']}
+                        </div>
+                    </a>
+                    HEREDOC;
+                    $iterator ++;
+                    if($iterator>=$max_list){
+                        break;
+                    }
+                }
+                ?>
+            <!-- Static sample
                 <a href="#" class="news-item">
                     <div class="date">
                     2019-04-26
@@ -262,7 +325,9 @@
                     Tim Robotika POLBAN di Coffee Break, tvOne, 17 April 2015
                     </div>
                 </a>
+            -->
             </div>
         </div>
     </section>
+
 </div>

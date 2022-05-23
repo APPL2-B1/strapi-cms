@@ -1,7 +1,9 @@
 <?php 
 include "path.php"; 
 include LANGUAGE_PATH."language_config.php"; 
-include DATA_BASE_PATH."data_base_config.php"; 
+include DATA_BASE_PATH."data_base_config_local.php"; 
+include DATA_BASE_PATH."data_base_query.php";
+$CONST = get_defined_constants();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,13 +24,15 @@ include DATA_BASE_PATH."data_base_config.php";
             <div class="container toolbar">
                 <!-- change language button set -->
                     <div class="toolbar-element">
-                    <a href="?lang=lang_english">
+                    <!-- <a href="?lang=lang_english"> -->
+                    <a href="?lang=lang_indonesian">
                         <img src="<?php echo COMMON_ICON?>um.svg" 
                         title="<?php echo $lang_navigation_english; ?>" 
                         class="icon-flag" style="width:25px">
                     </a>
                     </div>
                     <div class="toolbar-element">
+                    <!-- <a href="?lang=lang_indonesian"> -->
                     <a href="?lang=lang_indonesian">
                         <img src="<?php echo COMMON_ICON?>id.svg" 
                         title="<?php echo $lang_navigation_indonesian; ?>" 
@@ -36,7 +40,8 @@ include DATA_BASE_PATH."data_base_config.php";
                     </a>
                     </div>
                     <div class="toolbar-element">
-                    <a href="?lang=lang_japanese">
+                    <!-- <a href="?lang=lang_japanese"> -->
+                    <a href="?lang=lang_indonesian">
                         <img src="<?php echo COMMON_ICON?>jp.svg" 
                         title="<?php echo $lang_navigation_japanese; ?>" 
                         class="icon-flag" style="width:25px">
@@ -192,13 +197,16 @@ include DATA_BASE_PATH."data_base_config.php";
                     break;        
                     case 'search';
                     include VIEW_SEARCH;
+                    break;        
+                    case 'test';
+                    include "views/test.php";
                     break;          
                 }
             }
             else{
                 include "views/home.php";
             }
-            ?>
+        ?>
     </div>
     <!-- footer -->
     <footer>
