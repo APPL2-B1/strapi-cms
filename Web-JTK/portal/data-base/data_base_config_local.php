@@ -1,7 +1,7 @@
 <?php
 $server = "localhost";
 $user = "root";
-$password = "";
+$password = "password";
 $nama_database = "web_jtk";
 
 $db = mysqli_connect($server, $user, $password, $nama_database);
