@@ -1,6 +1,6 @@
 <?php
 // Navigator String
-$lang_web_title = "JTK-POLBAN";
+$lang_web_title = "JTK POLBAN";
 $lang_web_description = "情報工学科・バンドン国立ポリテクニク";
 $lang_navigation_home = "ホーム";
 $lang_navigation_profile = "プロファイル";
@@ -29,44 +29,44 @@ $lang_navigation_toggle_template = "テンプレートに切り替えます";
 // Footer
 $lang_creator = "ファチュリ・ムハンマド・バンダン・ハック";
 
-// home page
+// Home Page
 $lang_home_page_title = "ホーム";
 $lang_home_page_description = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// profile page
+// Profile Page
 $lang_profile_page_title = "プロファイル";
 $lang_profile_page_description = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// education page
+// Education Page
 $lang_education_page_title = "教育";
 $lang_education_page_description = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// contact page
+// Contact Page
 $lang_contact_page_title = "連絡先";
 $lang_contact_page_name = "Jurusan Teknik Komputer dan Informatik Politeknik Negeri Bandung";
 $lang_contact_page_address = "Jl. Gegerkalong Hilir, Ds. Ciwaruga Bandung 40559, Kotak Pos 1234 Jawa Barat";
 $lang_contact_page_telephone = "Telp. (022) 2013789 ext. 301";
 
-// partnership page
+// Partnership Page
 $lang_partnership_page_title = "パートナーシップ";
 $lang_partnership_page_description = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// facility page
+// Facility Page
 $lang_facility_page_title = "施設";
 $lang_facility_page_description = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// information and documentation page
+// Information and Documentation Page
 $lang_information_documentation_page_title = "ドキュメント";
 $lang_information_documentation_page_description = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// news page
+// News Page
 $lang_news_page_title = "ニュース";
 $lang_news_page_description = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// search page
+// Search Page
 $lang_search_page_title = "検索";
 
-// majors profile page
+// Majors Profile Page
 $lang_major_profile_page_title = "学部プロファイル";
 $lang_major_profile_work_prospect_title = "仕事の見通し";
 $lang_major_profile_work_prospect_description = "情報工学の卒業生が追求できる分野は、
@@ -75,44 +75,44 @@ $lang_major_profile_work_prospect_footer = "上記の専門分野に加えて、
 情報工学の卒業生は他の分野でも働くことができます。 たとえば、教育の分野や科学の分野で、
 LIPI、BPPT、企業の研究開発庁などの研究機関の研究者になることによって。";
 
-// staffs profile page
+// Staffs List Profile Page 
 $lang_staff_profile_list_page_title = "大学職員プロファイルリスト";
 $lang_staff_profile_list_table_tool_bar_reset = "レセット";
 $lang_staff_profile_page_description = "この文章はダミーです。文字の大きさ、量、字間、
 行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間
 等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// studi programs profile profile page
+// Study Programs Profile Page
 $lang_studi_programs_profile_page_title = "学科プロファイル";
 $lang_studi_programs_profile_page_description = "この文章はダミーです。文字の大きさ、量、字間、
 行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間
 等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// studi programs profile profile page
+// Study Programs Curriculum Page
 $lang_curriculum_page_title = "カリキュラム";
 $lang_curriculum_page_description = "この文章はダミーです。文字の大きさ、量、字間、
 行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間
 等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// studi programs profile profile page
+// Study Programs Agenda Page
 $lang_agenda_page_title = "アジェンダ";
 $lang_agenda_page_description = "この文章はダミーです。文字の大きさ、量、字間、
 行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間
 等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// studi programs profile profile page
+// Study Programs Achievement List Page
 $lang_achievement_list_page_title = "研究成果";
 $lang_achievement_list_page_description = "この文章はダミーです。文字の大きさ、量、字間、
 行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間
 等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// studi programs profile profile page
+// Study Programs Gallery Page
 $lang_gallery_page_title = "ギャラリー";
 $lang_gallery_description = "この文章はダミーです。文字の大きさ、量、字間、
 行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間
 等を確認するために入れています。この文章はダミーです。文字の大きさ、";
 
-// tracer study
+// Tracer Study Page
 $lang_tracer_study_page_title = "研究欄"; 
 $lang_tracer_study_page_description = "この文章はダミーです。文字の大きさ、量、字間、
 行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Bandang</title>
+		<title>JTK POLBAN</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	</head>
@@ -61,7 +61,7 @@
 		<img class="bg" src="asset/jp-castle-morning.png">
 		<main>
 		<a href="portal/">
-			<h1>website JTK</h1>
+			<h1>Situs Web JTK POLBAN</h1>
 			<img src="asset/jp-list-circle-fish.png">
 		</a>
 		</main>
